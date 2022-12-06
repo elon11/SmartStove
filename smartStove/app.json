@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "smartStove",
+    "slug": "smartStove",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
