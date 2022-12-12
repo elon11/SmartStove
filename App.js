@@ -8,7 +8,7 @@ const LOGO_SRC = Image.resolveAssetSource(LOGO).uri;
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text> Smart Stove </Text>
+      <Text> Smart Stove - OR SHANI </Text>
       <Image source={{ uri: LOGO_SRC }} style={{ width: 400, height: 400 }} />
       <StatusBar style='auto' />
     </View>
