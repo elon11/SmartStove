@@ -1,0 +1,64 @@
+{ 
+    "heatLevel":{
+            "0":"min",
+            "1": "low",
+            "2":"medium",
+            "3":"high",
+            "4":"max"
+        },
+        "result":{
+            "rair": 0,
+            "medium": 1,
+            "well": 2,
+            "welldone":3
+        },
+    
+        "EGG":{
+            "time":35,
+            "temperature":null,
+            "waterAmount": 1652, 
+            "amount": 1,
+            "cover":false,
+            "heatLevel":4,
+            "mixing": false,
+            "waterInitTemp":"warm",
+            "result": 3,
+            "taste":""
+        },
+        "PASTA":{
+            "time":35,
+            "temperature":null,
+            "waterAmount": 1652, 
+            "amount": 1,
+            "cover":false,
+            "heatLevel":4,
+            "mixing": false,
+            "waterInitTemp":"warm",
+            "result": 3,
+            "taste":""
+        },
+        "RICE":{
+            "time":35,
+            "temperature":null,
+            "waterAmount": 1652, 
+            "amount": 1,
+            "cover":false,
+            "heatLevel":4,
+            "mixing": false,
+            "waterInitTemp":"warm",
+            "result": 3,
+            "taste":""
+        },
+        "ILCOUSCOUS":{
+            "time":35,
+            "temperature":null,
+            "waterAmount": 1652, 
+            "amount": 1,
+            "cover":false,
+            "heatLevel":4,
+            "mixing": false,
+            "waterInitTemp":"warm",
+            "result": 3,
+            "taste":""
+        }
+    }
