@@ -1,64 +1,697 @@
 { 
-    "heatLevel":{
+    // לשנות טמפרטורת כירה בכל הדוגמאות לפי רמות החום שבדקתי עם החיישן ושלחתי לנריה
+    "HeatLevel":{
             "0":"min",
             "1": "low",
             "2":"medium",
             "3":"high",
             "4":"max"
         },
-        "result":{
+        "Result":{
             "rair": 0,
             "medium": 1,
             "well": 2,
             "welldone":3
         },
+        "Cover":{
+            "none": 0,
+            "half": 1,
+            "full": 2
+        },
+
+        "WaterInitTemp":{
+            "cold": 0,
+            "warm": 1,
+            "hot": 2
+        },
+        "Feedback":{
+            "notready": 0,
+            "partiallyready": 1,
+            "almostready": 2,
+            "ready": 3,
+            "overcook": 4
+        },
+    
     
         "EGG":{
-            "time":35,
-            "temperature":null,
-            "waterAmount": 1652, 
-            "amount": 1,
-            "cover":false,
-            "heatLevel":4,
-            "mixing": false,
-            "waterInitTemp":"warm",
-            "result": 3,
-            "taste":""
+            "TRY-0":{
+                "totaltime":35,
+                "staytime": 0,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 70,
+                "cover":0,
+                "heatLevel":4,
+                "mixing": false,
+                "waterInitTemp":2,
+                "result": 3,
+                "feedback":4
+            },
+            "TRY-1":{
+                "totaltime":35,
+                "staytime": 5,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 70,
+                "cover":0,
+                "heatLevel":4,
+                "mixing": false,
+                "waterInitTemp":2,
+                "result": 3,
+                "feedback":4
+            },
+            "TRY-2":{
+                "totaltime":30,
+                "staytime": 0,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 70,
+                "cover":0,
+                "heatLevel":4,
+                "mixing": false,
+                "waterInitTemp":2,
+                "result": 3,
+                "feedback":3
+
+            },
+            "TRY-3":{
+                "totaltime":30,
+                "staytime": 5,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 70,
+                "cover":0,
+                "heatLevel":4,
+                "mixing": false,
+                "waterInitTemp":2,
+                "result": 3,
+                "feedback":3
+
+            },
+            "TRY-4":{
+                "totaltime":25,
+                "staytime": 0,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 70,
+                "cover":0,
+                "heatLevel":4,
+                "mixing": false,
+                "waterInitTemp":2,
+                "result": 2,
+                "feedback":3
+
+            },
+            "TRY-5":{
+                "totaltime":25,
+                "staytime": 5,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 70,
+                "cover":0,
+                "heatLevel":4,
+                "mixing": false,
+                "waterInitTemp":2,
+                "result": 2,
+                "feedback":2
+
+            },
+            "TRY-6":{
+                "totaltime":20,
+                "staytime": 0,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 70,
+                "cover":0,
+                "heatLevel":4,
+                "mixing": false,
+                "waterInitTemp":2,
+                "result": 2,
+                "feedback":2
+
+            },
+            "TRY-7":{
+                "totaltime":20,
+                "staytime": 5,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 70,
+                "cover":0,
+                "heatLevel":4,
+                "mixing": false,
+                "waterInitTemp":2,
+                "result": 1,
+                "feedback":2
+
+            },
+            "TRY-8":{
+                "totaltime":17,
+                "staytime": 0,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 70,
+                "cover":0,
+                "heatLevel":4,
+                "mixing": false,
+                "waterInitTemp":2,
+                "result": 1,
+                "feedback":2
+
+            },
+            "TRY-9":{
+                "totaltime":17,
+                "staytime": 5,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 70,
+                "cover":0,
+                "heatLevel":4,
+                "mixing": false,
+                "waterInitTemp":2,
+                "result": 1,
+                "feedback":1
+
+            },
+            //בעשר נסיונות הבאים הכפלנו את כמות הביצים והורדנו את רמת החום 
+            // מבחינת זמני בישול עשינו לפי בעשר נסיונות הראשונים אותו דבר
+            "TRY-10":{
+                "totaltime":35,
+                "staytime": 0,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 140,
+                "cover":0,
+                "heatLevel":3,
+                "mixing": false,
+                "waterInitTemp":2,
+                "result": 3,
+                "feedback":4
+
+            },
+            "TRY-11":{
+                "totaltime":35,
+                "staytime": 5,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 140,
+                "cover":0,
+                "heatLevel":3,
+                "mixing": false,
+                "waterInitTemp":2,
+                "result": 3,
+                "feedback":4
+
+            },
+            "TRY-12":{
+                "totaltime":30,
+                "staytime": 0,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 140,
+                "cover":0,
+                "heatLevel":3,
+                "mixing": false,
+                "waterInitTemp":2,
+                "result": 3,
+                "feedback":3
+
+            },
+            "TRY-13":{
+                "totaltime":30,
+                "staytime": 5,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 140,
+                "cover":0,
+                "heatLevel":3,
+                "mixing": false,
+                "waterInitTemp":2,
+                "result": 2,
+                "feedback":3
+
+            },
+            "TRY-14":{
+                "totaltime":25,
+                "staytime": 0,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 140,
+                "cover":0,
+                "heatLevel":3,
+                "mixing": false,
+                "waterInitTemp":2,
+                "result": 2,
+                "feedback":3
+
+            },
+            "TRY-15":{
+                "totaltime":25,
+                "staytime": 5,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 140,
+                "cover":0,
+                "heatLevel":3,
+                "mixing": false,
+                "waterInitTemp":2,
+                "result": 2,
+                "feedback":2
+
+            },
+            "TRY-16":{
+                "totaltime":20,
+                "staytime": 0,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 140,
+                "cover":0,
+                "heatLevel":3,
+                "mixing": false,
+                "waterInitTemp":2,
+                "result": 1,
+                "feedback":2
+
+            },
+            "TRY-17":{
+                "totaltime":20,
+                "staytime": 5,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 140,
+                "cover":0,
+                "heatLevel":3,
+                "mixing": false,
+                "waterInitTemp":2,
+                "result": 1,
+                "feedback":2
+
+            },
+            "TRY-18":{
+                "totaltime":17,
+                "staytime": 0,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 140,
+                "cover":0,
+                "heatLevel":3,
+                "mixing": false,
+                "waterInitTemp":2,
+                "result": 1,
+                "feedback":1
+
+            },
+            "TRY-19":{
+                "totaltime":17,
+                "staytime": 5,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 140,
+                "cover":0,
+                "heatLevel":3,
+                "mixing": false,
+                "waterInitTemp":2,
+                "result": 1,
+                "feedback":1
+
+            },
+            //  בעשר נסיונות הבאות הורדנו את טמפרטורת המים לפושרים ועשינו רמת חום מקסימלית והחזרנו כמות לביצה אחת
+            "TRY-20":{
+                "totaltime":35,
+                "staytime": 0,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 70,
+                "cover":0,
+                "heatLevel":4,
+                "mixing": false,
+                "waterInitTemp":1,
+                "result": 3,
+                "feedback":4
+
+            },
+            "TRY-21":{
+                "totaltime":35,
+                "staytime": 5,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 70,
+                "cover":0,
+                "heatLevel":4,
+                "mixing": false,
+                "waterInitTemp":1,
+                "result": 3,
+                "feedback":3
+
+            },
+            "TRY-22":{
+                "totaltime":30,
+                "staytime": 0,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 70,
+                "cover":0,
+                "heatLevel":4,
+                "mixing": false,
+                "waterInitTemp":1,
+                "result": 3,
+                "feedback":3
+
+            },
+            "TRY-23":{
+                "totaltime":30,
+                "staytime": 5,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 70,
+                "cover":0,
+                "heatLevel":4,
+                "mixing": false,
+                "waterInitTemp":1,
+                "result": 2,
+                "feedback":3
+
+            },
+            "TRY-24":{
+                "totaltime":25,
+                "staytime": 0,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 70,
+                "cover":0,
+                "heatLevel":4,
+                "mixing": false,
+                "waterInitTemp":1,
+                "result": 2,
+                "feedback":2
+
+            },
+            "TRY-25":{
+                "totaltime":25,
+                "staytime": 5,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 70,
+                "cover":0,
+                "heatLevel":4,
+                "mixing": false,
+                "waterInitTemp":1,
+                "result": 2,
+                "feedback":2
+
+            },
+            "TRY-26":{
+                "totaltime":20,
+                "staytime": 0,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 70,
+                "cover":0,
+                "heatLevel":4,
+                "mixing": false,
+                "waterInitTemp":1,
+                "result": 1,
+                "feedback":2
+
+            },
+            "TRY-27":{
+                "totaltime":20,
+                "staytime": 5,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 70,
+                "cover":0,
+                "heatLevel":4,
+                "mixing": false,
+                "waterInitTemp":1,
+                "result": 1,
+                "feedback":1
+
+            },
+            "TRY-28":{
+                "totaltime":17,
+                "staytime": 0,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 70,
+                "cover":0,
+                "heatLevel":4,
+                "mixing": false,
+                "waterInitTemp":1,
+                "result": 1,
+                "feedback":1
+
+            },
+            "TRY-29":{
+                "totaltime":17,
+                "staytime": 5,
+                "temperature":65,
+                "waterAmount": 1652, 
+                "amount": 70,
+                "cover":0,
+                "heatLevel":4,
+                "mixing": false,
+                "waterInitTemp":1,
+                "result": 0,
+                "feedback":1
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         },
         "PASTA":{
-            "time":25,
+            "TRY-0":{
+            "totaltime": 30,
+            "staytime": 0,
             "temperature":null,
-            "waterAmount": 2000, 
-            "amount": 0.5,
-            "cover":false,
+            "waterAmount": 1500, 
+            "amount": 250,
+            "cover":0,
             "heatLevel":4,
             "mixing": true,
-            "waterInitTemp":"hot",
+            "waterInitTemp":2,
+            "result": 2,
+            "feedback":3
+            },
+            "TRY-1":{
+            "totaltime": 20,
+            "staytime": 5,
+            "temperature":null,
+            "waterAmount": 1500, 
+            "amount": 250,
+            "cover":0,
+            "heatLevel":4,
+            "mixing": true,
+            "waterInitTemp":2,
             "result": 3,
-            "taste":""
+            "feedback":4
+            },
+            "TRY-2":{
+
+            },
+            "TRY-3":{
+
+            },
+            "TRY-4":{
+
+            },
+            "TRY-5":{
+
+            },
+            "TRY-6":{
+
+            },
+            "TRY-7":{
+
+            },
+            "TRY-8":{
+
+            },
+            "TRY-9":{
+
+            },
+            "TRY-10":{
+
+            },
+            "TRY-11":{
+
+            },
+            "TRY-12":{
+
+            },
+            "TRY-13":{
+
+            },
+            "TRY-14":{
+
+            },
+            "TRY-15":{
+
+            },
+            "TRY-16":{
+
+            },
+            "TRY-17":{
+
+            },
+            "TRY-18":{
+
+            },
+            "TRY-19":{
+
+            },
+            "TRY-20":{
+
+            },
+            "TRY-21":{
+
+            },
+            "TRY-22":{
+
+            },
+            "TRY-23":{
+
+            },
+            "TRY-24":{
+
+            },
+            "TRY-25":{
+
+            },
+            "TRY-26":{
+
+            },
+            "TRY-27":{
+
+            },
+            "TRY-28":{
+
+            },
+            "TRY-29":{
+
+            }
+            
         },
+
+
+
+
+
+
         "RICE":{
-            "time":35,
-            "temperature":null,
-            "waterAmount": 500, 
-            "amount": 0.2,
-            "cover":true,
-            "heatLevel":4,
-            "mixing": true,
-            "waterInitTemp":"hot",
-            "result": 3,
-            "taste":""
+            "TRY-0":{
+                "totaltime":35,
+                "staytime": 0,
+                "temperature":null,
+                "waterAmount": 500, 
+                "amount": 200,
+                "cover":1,
+                "heatLevel":4,
+                "mixing": true,
+                "waterInitTemp":2,
+                "result": 3,
+                "feedback":3
+             },
+            "TRY-1":{
+                
+            },
+            "TRY-2":{
+
+            },
+            "TRY-3":{
+
+            },
+            "TRY-4":{
+
+            },
+            "TRY-5":{
+
+            },
+            "TRY-6":{
+
+            },
+            "TRY-7":{
+
+            },
+            "TRY-8":{
+
+            },
+            "TRY-9":{
+
+            },
+            "TRY-10":{
+
+            },
+            "TRY-11":{
+
+            },
+            "TRY-12":{
+
+            },
+            "TRY-13":{
+
+            },
+            "TRY-14":{
+
+            },
+            "TRY-15":{
+
+            },
+            "TRY-16":{
+
+            },
+            "TRY-17":{
+
+            },
+            "TRY-18":{
+
+            },
+            "TRY-19":{
+
+            },
+            "TRY-20":{
+
+            },
+            "TRY-21":{
+
+            },
+            "TRY-22":{
+
+            },
+            "TRY-23":{
+
+            },
+            "TRY-24":{
+
+            },
+            "TRY-25":{
+
+            },
+            "TRY-26":{
+
+            },
+            "TRY-27":{
+
+            },
+            "TRY-28":{
+
+            },
+            "TRY-29":{
+
+            }
+            
         },
-        "ILCOUSCOUS":{
-            "time":20,
-            "temperature":null,
-            "waterAmount": 250, 
-            "amount": 0.2,
-            "cover":true,
-            "heatLevel":4,
-            "mixing": true,
-            "waterInitTemp":"warm",
-            "result": 3,
-            "taste":""
-        }
+     
     }
